@@ -5,3 +5,144 @@ body {
   color: white;
   font-family: Helvetica, Arial, sans-serif;
 }
+.companylogo {
+  width: 130px;
+  height: 80px;
+}
+
+.navbar {
+  position: fixed; /* Set the navbar to fixed position, so it stays still when you scroll down and up */
+  top: 0; /* Position the navbar at the top of the page, fixed position*/
+  width: 100%; /* Full width, otherwise it only takes a fixed size of the screen width */
+  background-color: #508372;
+  display: flex; /* make the navbar adapt to screen size */
+  justify-content: space-around;
+  height: 80px;
+  align-items: center;
+}
+
+.navlist {
+  list-style-type: none; /* remove the points before the list items */
+}
+
+.listitem {
+  display: inline-block; /* makes list items inline, so they appear next to each other horizontally */
+}
+.navbar a {
+  /* Modifies reference on navbar */
+  color: white;
+  text-decoration: none;
+  margin: 25px;
+}
+.navbar a:hover {
+  /* Describes what happens when a link on navbar is hovered on*/
+  color: #38b6f1;
+  font-size: 1.5em;
+}
+.footer {
+  /* Set the navbar to fixed position, so it stays still when you scroll down and up */
+  bottom: 0; /* Position the navbar at the top of the page, fixed position*/
+  width: 100%; /* Full width, otherwise it only takes a fixed size of the screen width */
+  background-color: #508372;
+  color: white;
+  display: flex; /* make the navbar adapt to screen size */
+  justify-content: space-around;
+  height: 80px;
+  align-items: center;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #38b6f1;
+  font-size: 1.5em;
+}
+#attractionslide {
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slide-player {
+  width: 300%;
+  animation: carouselAnimation 18s ease infinite; /* 4 images * 4s = 16s */
+}
+
+.slide {
+  position: relative; /* Add this line */
+  float: left;
+  width: 33.3%;
+}
+
+.slide-content {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 16px;
+  top: 80px;
+}
+.slide-content img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes carouselAnimation {
+  20% {
+    margin-left: 0%;
+  }
+  30% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -100%;
+  }
+  60% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  80% {
+    margin-left: -300%;
+  }
+  90% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+.description {
+  /* This is the description of the attraction */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 16px;
+}
+
+.description h1 {
+  /* This is the title of the attraction */
+  text-align: center;
+  font-size: 1em;
+  margin: 15px;
+}
+
+@media (min-width: 728px) {
+  #attractionslide {
+    max-width: 728px;
+    height: 528px;
+  }
+  .slide {
+    height: 300px;
+  }
+}
