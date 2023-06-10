@@ -37,7 +37,7 @@ Attractions:
 
 Services:
 
-"Fairy Fountain First Aid": Our first aid station is here to ensure your safety and well-being. Staffed with trained professionals, we're here to help with any minor injuries or health concerns.
+"Fairy First Aid": Our first aid station is here to ensure your safety and well-being. Staffed with trained professionals, we're here to help with any minor injuries or health concerns.
 
 "Lon Lon Ranch Petting Zoo": Take a break from the thrills and spend some time with our friendly farm animals at the Lon Lon Ranch Petting Zoo.
 
