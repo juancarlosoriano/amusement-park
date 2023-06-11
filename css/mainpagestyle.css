@@ -15,6 +15,7 @@ body {
 
 .navbar {
   /* This is the navbar */
+  display: flex;
   position: fixed; /* Set the navbar to fixed position, so it stays still when you scroll down and up */
   top: 0; /* Position the navbar at the top of the page, fixed position*/
   width: 100%; /* Full width, otherwise it only takes a fixed size of the screen width */
@@ -28,20 +29,24 @@ body {
 nav .navbar-toggle {
   display: none;
   height: min-content;
-  margin: 18px -10px 0 0;
+  margin-top: 25%;
+  padding-bottom: 15px;
   cursor: pointer;
 }
 nav .navbar-toggle p {
   font-size: 5em;
-  margin-bottom: 15%;
+  margin-bottom: -15%;
   margin-left: 60%;
 }
 .navlist {
   list-style-type: none; /* remove the points before the list items */
+  margin-left: 0;
 }
 
 .listitem {
   display: inline-block; /* makes list items inline, so they appear next to each other horizontally */
+  padding: 30px;
+  justify-content: space-between;
 }
 .navbar a {
   /* Modifies reference on navbar */
@@ -49,10 +54,9 @@ nav .navbar-toggle p {
   text-decoration: none;
   margin: 25px;
 }
-.navbar a:hover {
+.navbar li:hover {
   /* Describes what happens when a link on navbar is hovered on*/
-  color: #38b6f1;
-  font-size: 1.5em;
+  background-color: #38b6f1;
 }
 .footer {
   /* Set the navbar to fixed position, so it stays still when you scroll down and up */
@@ -154,36 +158,32 @@ nav .navbar-toggle p {
   margin: 15px;
 }
 @media (max-width: 728px) {
-  nav .navlist .listitem {
-    padding: 0 20px;
-  }
+  /* This is the media query for the navbar */
   nav .navlist {
     display: grid;
     postition: absolute;
-    background: black;
+    background: #508372;
     width: 100%;
-    top: 80px;
-    left: 0;
-    transform: translateY(-1000%);
+    transform: translateY(-400%);
     z-index: -1;
-    transition: 0.4s;
+    transition: 0.6s;
+    padding-left: 0;
   }
-  nav .navlist .navitem {
-    padding-left: 35px;
-  }
-
   nav .navbar-toggle {
     display: flex !important;
   }
 }
 input {
+  /* This is the input for the navbar */
   display: none;
 }
 
 input:checked ~ .navlist {
-  transform: translateY(0);
+  /* This is the input for the navbar */
+  transform: translateY(0%);
   z-index: 1;
 }
+
 @media screen and (min-width: 728px) {
   #attractionslide {
     max-width: 50%;
