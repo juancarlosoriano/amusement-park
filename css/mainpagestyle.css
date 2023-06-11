@@ -1,17 +1,20 @@
 body {
+  /* This is the body of the page */
   padding: 0;
   margin: 0;
   list-style-type: none;
   color: white;
   font-family: Helvetica, Arial, sans-serif;
 }
-.companylogo {
-  width: 10%;
-  height: 10%;
-  background-color: #38b6f1;
+.logocontainer .companylogo {
+  /* This is the logo on the top left corner */
+  width: 80px;
+  height: 80px;
+  background-color: #508372;
 }
 
 .navbar {
+  /* This is the navbar */
   position: fixed; /* Set the navbar to fixed position, so it stays still when you scroll down and up */
   top: 0; /* Position the navbar at the top of the page, fixed position*/
   width: 100%; /* Full width, otherwise it only takes a fixed size of the screen width */
@@ -20,6 +23,7 @@ body {
   justify-content: space-around;
   height: 80px;
   align-items: center;
+  z-index: 1; /* This makes the navbar appear on top of the carousel */
 }
 
 .navlist {
@@ -28,6 +32,29 @@ body {
 
 .listitem {
   display: inline-block; /* makes list items inline, so they appear next to each other horizontally */
+}
+@media screen and(max-width: 728px) {
+  width: 40px;
+  height: 25px;
+
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    background: #fff;
+    transform: translateY(-50%);
+  }
+  &::before {
+    top: 30%;
+  }
+  &::after {
+    top: 70%;
+  }
 }
 .navbar a {
   /* Modifies reference on navbar */
@@ -52,14 +79,17 @@ body {
   align-items: center;
 }
 .footer a {
+  /* Modifies reference on footer */
   color: white;
   text-decoration: none;
 }
 .footer a:hover {
+  /* Describes what happens when a link on footer is hovered on*/
   color: #38b6f1;
   font-size: 1.5em;
 }
 #attractionslide {
+  /* This is the carousel */
   text-align: center;
   overflow: hidden;
   width: 100%;
@@ -67,17 +97,20 @@ body {
 }
 
 .slide-player {
+  /* This is the carousel */
   width: 300%;
-  animation: carouselAnimation 18s ease infinite; /* 4 images * 4s = 16s */
+  animation: carouselAnimation 12s ease infinite; /* 4 images * 4s = 16s */
 }
 
 .slide {
+  /* This is the carousel */
   position: relative; /* Add this line */
   float: left;
   width: 33.3%;
 }
 
 .slide-content {
+  /* This is the image of the attraction */
   position: relative;
   bottom: 0;
   left: 0;
@@ -89,31 +122,27 @@ body {
   top: 80px;
 }
 .slide-content img {
+  /* This is the image of the attraction */
   width: 100%;
   height: auto;
 }
 
 @keyframes carouselAnimation {
+  /* This is the carousel */
   20% {
     margin-left: 0%;
   }
-  30% {
-    margin-left: -100%;
-  }
-  50% {
+  40% {
     margin-left: -100%;
   }
   60% {
-    margin-left: -200%;
-  }
-  70% {
-    margin-left: -200%;
+    margin-left: -100%;
   }
   80% {
-    margin-left: -300%;
+    margin-left: -200%;
   }
   90% {
-    margin-left: -300%;
+    margin-left: -200%;
   }
   100% {
     margin-left: 0%;
@@ -123,7 +152,7 @@ body {
 .description {
   /* This is the description of the attraction */
   position: absolute;
-  top: 100%;
+  bottom: 20%;
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -138,12 +167,33 @@ body {
   margin: 15px;
 }
 
-@media (min-width: 728px) {
+@media screen and (min-width: 728px) {
   #attractionslide {
-    max-width: 728px;
-    height: 528px;
+    max-width: 50%;
+    height: auto;
   }
   .slide {
-    height: 300px;
+    height: 50%;
   }
+}
+
+.ticketcontainer {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tiercontainer {
+  flex: 1;
+  border: 2px;
+  background-color: #38b6f1;
+  margin-right: 5px; /* Seperates the boxes from one and another and adds margin with website border*/
+}
+.tiercontainer h1 {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 15px;
+  color: yellow;
+}
+.tiercontainer ul {
+  margin-right: 5%;
 }
