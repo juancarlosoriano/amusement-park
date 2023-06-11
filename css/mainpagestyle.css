@@ -5,6 +5,7 @@ body {
   list-style-type: none;
   color: white;
   font-family: Helvetica, Arial, sans-serif;
+  background-color: #503080;
 }
 .logocontainer .companylogo {
   /* This is the logo on the top left corner */
@@ -172,6 +173,18 @@ nav .navbar-toggle p {
   nav .navbar-toggle {
     display: flex !important;
   }
+  #ticketpurchase {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 450px) {
+  #ticketpurchase {
+    font-size: 0.5em;
+  }
+  .description h1 {
+    font-size: 0.5em;
+  }
 }
 input {
   /* This is the input for the navbar */
@@ -195,7 +208,6 @@ input:checked ~ .navlist {
 }
 
 .ticketcontainer {
-  background-color: black;
   display: flex;
   flex-wrap: wrap;
 }
@@ -203,7 +215,8 @@ input:checked ~ .navlist {
   flex: 1;
   border: 2px;
   background-color: #38b6f1;
-  margin-right: 5px; /* Seperates the boxes from one and another and adds margin with website border*/
+  margin-right: 2px; /* Seperates the boxes from one and another and adds margin with website border*/
+  margin-left: 2px;
 }
 .tiercontainer h1 {
   text-align: center;
@@ -212,5 +225,8 @@ input:checked ~ .navlist {
   color: yellow;
 }
 .tiercontainer ul {
-  margin-right: 5%;
+  margin-right: 10%;
+  padding-left: 10%;
+  list-style-type: square;
+  list-style-position: outside;
 }
