@@ -5,22 +5,20 @@ body {
   list-style-type: none;
   color: white;
   font-family: Helvetica, Arial, sans-serif;
-  background-color: #503080;
+  background-color: #e9c46a;
 }
 .logocontainer .companylogo {
   /* This is the logo on the top left corner */
   width: 80px;
   height: 80px;
-  background-color: #508372;
 }
 
 .navbar {
   /* This is the navbar */
-  display: flex;
   position: fixed; /* Set the navbar to fixed position, so it stays still when you scroll down and up */
   top: 0; /* Position the navbar at the top of the page, fixed position*/
   width: 100%; /* Full width, otherwise it only takes a fixed size of the screen width */
-  background-color: #508372;
+  background-color: #264653;
   display: flex; /* make the navbar adapt to screen size */
   justify-content: space-around;
   height: 80px;
@@ -57,13 +55,13 @@ nav .navbar-toggle p {
 }
 .navbar li:hover {
   /* Describes what happens when a link on navbar is hovered on*/
-  background-color: #38b6f1;
+  background-color: #e76f51;
 }
 .footer {
   /* Set the navbar to fixed position, so it stays still when you scroll down and up */
   bottom: 0; /* Position the navbar at the top of the page, fixed position*/
   width: 100%; /* Full width, otherwise it only takes a fixed size of the screen width */
-  background-color: #508372;
+  background-color: #264653;
   color: white;
   display: flex; /* make the navbar adapt to screen size */
   justify-content: space-around;
@@ -74,11 +72,11 @@ nav .navbar-toggle p {
   /* Modifies reference on footer */
   color: white;
   text-decoration: none;
+  padding: 30px;
 }
 .footer a:hover {
   /* Describes what happens when a link on footer is hovered on*/
-  color: #38b6f1;
-  font-size: 1.5em;
+  background-color: #e76f51;
 }
 #attractionslide {
   /* This is the carousel */
