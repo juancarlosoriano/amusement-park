@@ -58,40 +58,43 @@ nav .navbar-toggle p {
   background-color: #e76f51;
 }
 footer {
+  /* This is the footer */
   background-color: #264653;
   color: #fff;
-  padding: 20px 0;
-  font-family: Arial, sans-serif;
+  padding: 20px 0; /* 20px top and bottom, 0 left and right */
+  font-family: Arial, sans-serif; /* font family */
 }
 
 .footer-container {
+  /* This is the footer */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* This makes the footer appear in the middle of the page */
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px; /* 0 top and bottom, 15px left and right */
 }
 
 .footer-section {
-  flex: 1;
-  margin-right: 20px;
+  flex: 1; /* flex: 1 means that the footer sections will take up equal space */
+  margin-right: 20px; /* 20px margin between each footer section */
 }
 
 .footer-section:last-child {
-  margin-right: 0;
+  /* This is the last footer section */
+  margin-right: 0; /* This removes the margin between the last footer section and the footer container */
 }
 
 .footer-section h3,
 .footer-section h4 {
-  margin-bottom: 15px;
+  margin-bottom: 15px; /* 15px margin bottom for the h3 and h4 */
 }
 
 .footer-section p,
 .footer-section a {
-  margin-bottom: 10px;
-  display: block;
+  margin-bottom: 10px; /* 10px margin bottom for the p and a */
+  display: block; /* This makes the p and a appear in a block */
   color: #fff;
-  text-decoration: none;
+  text-decoration: none; /* This removes the underline from the links */
 }
 
 .footer-section a:hover {
