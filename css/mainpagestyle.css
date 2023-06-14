@@ -57,27 +57,55 @@ nav .navbar-toggle p {
   /* Describes what happens when a link on navbar is hovered on*/
   background-color: #e76f51;
 }
-.footer {
-  /* Set the navbar to fixed position, so it stays still when you scroll down and up */
-  bottom: 0; /* Position the navbar at the top of the page, fixed position*/
-  width: 100%; /* Full width, otherwise it only takes a fixed size of the screen width */
+footer {
   background-color: #264653;
-  color: white;
-  display: flex; /* make the navbar adapt to screen size */
-  justify-content: space-around;
-  height: 80px;
-  align-items: center;
+  color: #fff;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
 }
-.footer a {
-  /* Modifies reference on footer */
-  color: white;
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-section:last-child {
+  margin-right: 0;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section a {
+  margin-bottom: 10px;
+  display: block;
+  color: #fff;
   text-decoration: none;
-  padding: 30px;
 }
-.footer a:hover {
-  /* Describes what happens when a link on footer is hovered on*/
-  background-color: #e76f51;
+
+.footer-section a:hover {
+  color: #ffa500;
 }
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #222;
+  color: #fff;
+  margin-top: 20px;
+}
+
 #attractionslide {
   /* This is the carousel */
   text-align: center;
