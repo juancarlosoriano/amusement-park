@@ -1,9 +1,9 @@
 Hex code for colors:
-#00cc00
-#1bb04c
-#508372
-#70af23
-#38b6f1
+--green: #2a9d8f;
+--darkblue: #264653;
+--orange: #e76f51;
+--lightorange: #ffa500;
+--yellow: #e9c46a;
 
 Coasters:
 
