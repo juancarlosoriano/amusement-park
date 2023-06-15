@@ -253,6 +253,6 @@ input:checked ~ .navlist {
   font-size: large;
 }
 .attraction-child:hover {
-  transform: scale(1); /* Increase the scale to zoom in */
+  transform: scale(1.3); /* Increase the scale to zoom in */
   transition: transform 0.3 ease; /* Add a smooth transition effect */
 }
