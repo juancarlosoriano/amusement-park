@@ -57,7 +57,6 @@ main {
 /* Button Styles */
 .btn-cta {
   display: block;
-  padding: 16px 0;
   background-color: var(--main-colour);
   color: var(--secondary-accent);
   text-align: center;
@@ -72,6 +71,14 @@ main {
 .btn-cta:hover {
   background-color: var(--highlight-colour);
   border-color: var(--secondary-accent);
+}
+
+.ticket-card-btn {
+  padding: 16px 0;
+}
+
+.ticket-card-btn:hover {
+  text-decoration: none;
 }
 
 /* Navigation Bar Styles */
@@ -102,7 +109,7 @@ main {
 .navbar-list {
   display: flex;
   justify-content: flex-end;
-  align-items: right;
+  align-items: center;
 }
 
 .navbar-list-item {
@@ -112,14 +119,19 @@ main {
   font-family: var(--special-font);
 }
 
-.navbar-list-item a {
+.navbar-list-item-nav {
   color: var(--neutral-colour);
 }
 
-.navbar-list-item a:hover {
+.navbar-list-item-nav:hover {
   color: var(--highlight-colour);
   text-underline-offset: 8px;
   text-decoration: underline;
+}
+
+.navbar-list-item-cta {
+  padding: 4px 12px;
+  font-size: 18px;
 }
 
 /* Ticket Card Styles */
