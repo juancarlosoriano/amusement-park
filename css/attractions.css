@@ -227,6 +227,8 @@ input:checked ~ .navlist {
   /*Main container of attraction flex boxes. */
   display: flex;
   flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .attraction-child {
@@ -249,4 +251,8 @@ input:checked ~ .navlist {
   /* These are the descriptions of attractions inside the boxes */
   text-align: center;
   font-size: large;
+}
+.attraction-child:hover {
+  transform: scale(1); /* Increase the scale to zoom in */
+  transition: transform 0.3 ease; /* Add a smooth transition effect */
 }
