@@ -242,6 +242,7 @@ main {
 .ticket-card-subtitle-special {
   margin-top: 15px;
   font-weight: 500;
+  color: var(--highlight-colour);
 }
 
 .ticket-card-text-special {
