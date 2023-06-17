@@ -10,133 +10,307 @@ Batin Orene
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Legend of Zelda Amusement Park</title>
-    <link rel="stylesheet" href="./css/mainpagestyle.css" />
+    <link rel="stylesheet" href="./css/styles2.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar"> <!-- Navigation bar -->
-        <div class="logocontainer"> <!-- Logo -->
-          <a href="/index.html"> 
-            <img class="companylogo" src="/images/logo.png" alt="Company Logo" /> <!-- Company Logo -->
-          </a>
+    <!-- Navbar Component -->
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="./index2.html">
+          <img class="navbar-logo" src="./images/logo.png" />
+        </a>
+        <ul class="navbar-list">
+          <li class="navbar-list-item">
+            <a
+              class="navbar-list-item-nav"
+              href="./pages/rides-attractions.html"
+            >
+              Attractions
+            </a>
+          </li>
+          <li class="navbar-list-item">
+            <a class="navbar-list-item-nav" href="#">About</a>
+          </li>
+          <li class="navbar-list-item">
+            <a class="navbar-list-item-cta btn-cta" href="#">Buy Now</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Component -->
+    <main>
+      <div class="container">
+        <h1 class="main-title">Welcome to Hyrule Adventure Park!</h1>
+      </div>
+      <!-- Carousel -->
+      <section class="container carousel">
+        <div class="carousel-slide">
+          <img id="carousel-img" />
         </div>
-        <div>
-          <input type="checkbox" id="toggle"/> <!-- Hamburger menu -->
-          <label class ="navbar-toggle" for="toggle"><p>&#9776;</p></label>
-           <!-- Hamburger menu -->
-          <ul class="navlist"> <!-- Navigation list -->
-            <li class="listitem"> <!-- Navigation list items -->
-              <a href="/rides_and_services.html">Attractions & Rides</a> <!-- Navigation list item links -->
+        <div class="carousel-desc">
+          <h1 id="carousel-desc-title"></h1>
+          <p id="carousel-desc-text" class="container"></p>
+        </div>
+        <div class="carousel-control">
+          <div id="carousel-btn-0"></div>
+          <div id="carousel-btn-1"></div>
+          <div id="carousel-btn-2"></div>
+        </div>
+      </section>
+
+      <!-- Ticket Info Component -->
+      <section class="container ticket-info">
+        <div class="ticket-card">
+          <h2 class="ticket-card-title">Standard Pass</h2>
+          <hr class="break" />
+          <ul>
+            <li class="ticket-card-desc">
+              <span class="ticket-card-subtitle">Access to the park</span>
+              <span class="ticket-card-text">
+                Enjoy a full day of access to all the rides, attractions, and
+                services in the park
+              </span>
             </li>
-            <li class="listitem"><a href="#">About</a></li>
-            <li class="listitem"><a href="#popup" class="buy-btn">Buy Now</a>
-              <div id="popup" class="popup">
-                <div class="popup-content">
-                  <h2>Not Available</h2>
-                  <p>Online purchases are yet to be available. Please call our customer service for reservation.</p>
-                  <a href="#" class="close-btn">Close</a>
-                </div>
-              </div></li>
+            <li class="ticket-card-desc">
+              <span class="ticket-card-subtitle">Hyrule Market Discounts</span>
+              <span class="ticket-card-text">
+                Receive a 10% discount on all purchases at the Hyrule Market
+              </span>
+            </li>
+            <li class="ticket-card-desc">
+              <span class="ticket-card-subtitle">Food Court Access</span>
+              <span class="ticket-card-text">
+                Food Court Access: Access to all food and beverage outlets in
+                the park
+              </span>
+            </li>
           </ul>
-          
+          <hr class="break" />
+          <a class="ticket-card-btn btn-cta" href="#">Buy Pass</a>
         </div>
-      </nav>
-    </header>
-    <section id="carousel">
-      <div id="attractionslide"> <!-- Slideshow of attractions -->
-        <div class="slide-player"> <!-- Slideshow player -->
-          <div class="slide"> <!-- Slideshow content -->
-            <div class="slide-content"> 
-              <img src="/images/epona_coaster.jpg" alt="Image1" /> 
-              <div class="description"><h1>"Epona's Wild Ride": Experience the exhilaration of riding with Link's loyal steed, Epona, in this high-speed wooden roller coaster. Gallop through the fields of Hyrule at breakneck speeds, with twists, turns, and jumps that mimic Epona's agile movements.
-              </h1></div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide-content">
-              <img src="/images/ganon_coaster.jpg" alt="Image2" />
-              <div class="description"><h1>The Temple of Time: Step into the mystical Temple of Time and unlock the secrets of the Triforce. Brace yourself for a mind-bending adventure as you navigate through ancient chambers, solve puzzles, and manipulate time itself. Feel the thrill of discovery as you uncover hidden treasures and face the challenges that await within the temple. Will you have the wisdom, courage, and power to emerge victorious?</h1>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide-content">
-              <img src="/images/gerudo_gokart.jpg" alt="Image3" />
-              <div class="description">
-                <h1>"Gerudo Valley Go-Karts": Race against your friends in this thrilling go-kart track that winds through the sandy dunes and rocky cliffs of Gerudo Valley. Feel the wind in your hair as you drift around corners and speed down straightaways. Will you be the first to cross the finish line?
-                </h1>
-              </div>
-            </div>
-          </div>
-      </div>
-    </section>
-    <section id="ticketpurchase">
-      <div class="ticketcontainer">
-        <div class="tiercontainer"><h1>Standard Pass</h1>
+
+        <div class="ticket-card">
+          <h2 class="ticket-card-title">Premium Pass</h2>
+          <hr class="break" />
           <ul>
-            <li><b>Access to the Park:</b> Enjoy a full day of access to all the rides, attractions, and services in the park.</li>
-            <li><b>Hyrule Market Discounts:</b> Receive a 10% discount on all purchases at the Hyrule Market.</li>
-            <li><b>Food Court Access:</b> Access to all food and beverage outlets in the park.</li>
+            <li class="ticket-card-desc">
+              <span class="ticket-card-subtitle ticket-card-subtitle-special"
+                >All Standard Pass Benefits</span
+              >
+              <span class="ticket-card-text ticket-card-text-special">
+                Enjoy all the benefits of the Standard Pass
+              </span>
+            </li>
+            <hr class="break" />
+            <li class="ticket-card-desc">
+              <span class="ticket-card-subtitle">Fast Pass Access</span>
+              <span class="ticket-card-text">
+                Skip the lines with Fast Pass access to all rides and
+                attractions
+              </span>
+            </li>
+            <li class="ticket-card-desc">
+              <span class="ticket-card-subtitle">Exclusive Shows</span>
+              <span class="ticket-card-text">
+                Access to exclusive shows and performances not available to
+                Standard Pass holders
+              </span>
+            </li>
+            <li class="ticket-card-desc">
+              <span class="ticket-card-subtitle">Free Souvenir Photo</span>
+              <span class="ticket-card-text">
+                Receive a complimentary photo from the Sheikah Slate Photo Booth
+              </span>
+            </li>
+            <li class="ticket-card-desc">
+              <span class="ticket-card-subtitle">Hyrule Market Discounts</span>
+              <span class="ticket-card-text">
+                Increased discount of 15% on all purchases at the Hyrule Market
+              </span>
+            </li>
+            <li class="ticket-card-desc">
+              <span class="ticket-card-subtitle">Reserved Seating</span>
+              <span class="ticket-card-text">
+                Enjoy reserved seating at all shows and performances
+              </span>
+            </li>
           </ul>
-          <div class="price">Price: $X.XX</div>
-      <a href="#popup" class="buy-btn">Buy Now</a>
-      <div id="popup" class="popup">
-        <div class="popup-content">
-          <h2>Not Available</h2>
-          <p>Online purchases are yet to be available. Please call our customer service for reservation.</p>
-          <a href="#" class="close-btn">Close</a>
+          <hr class="break" />
+          <a class="ticket-card-btn btn-cta" href="#">Buy Pass</a>
+        </div>
+
+        <div class="ticket-card">
+          <h2 class="ticket-card-title">Elite Pass</h2>
+          <hr class="break" />
+          <ul>
+            <li class="ticket-card-desc">
+              <span class="ticket-card-subtitle ticket-card-subtitle-special"
+                >All Premium Pass Benefits</span
+              >
+              <span class="ticket-card-text ticket-card-text-special">
+                Enjoy all the benefits of the Premium Pass
+              </span>
+            </li>
+            <hr class="break" />
+            <li class="ticket-card-desc">
+              <span class="ticket-card-subtitle">VIP Parking</span>
+              <span class="ticket-card-text">
+                Enjoy the convenience of VIP parking close to the park entrance
+              </span>
+            </li>
+            <li class="ticket-card-desc">
+              <span class="ticket-card-subtitle">Early Access</span>
+              <span class="ticket-card-text">
+                Get a head start on the fun with early access to the park before
+                it opens to the public
+              </span>
+            </li>
+            <li class="ticket-card-desc">
+              <span class="ticket-card-subtitle">Behind-the-Scenes Tours</span>
+              <span class="ticket-card-text">
+                Gain exclusive access to behind-the-scenes tours of select
+                attractions
+              </span>
+            </li>
+            <li class="ticket-card-desc">
+              <span class="ticket-card-subtitle"
+                >Meet and Greet with Characters</span
+              >
+              <span class="ticket-card-text">
+                Enjoy scheduled meet and greet sessions with your favorite Zelda
+                characters
+              </span>
+            </li>
+            <li class="ticket-card-desc">
+              <span class="ticket-card-subtitle">Complimentary Dining</span>
+              <span class="ticket-card-text">
+                Enjoy complimentary meals at the Kakariko Village Food Court
+              </span>
+            </li>
+            <li class="ticket-card-desc">
+              <span class="ticket-card-subtitle">Hyrule Market Discounts</span>
+              <span class="ticket-card-text">
+                Top-tier discount of 20% on all purchases at the Hyrule Market
+              </span>
+            </li>
+            <li class="ticket-card-desc">
+              <span class="ticket-card-subtitle">Personal Park Guide</span>
+              <span class="ticket-card-text">
+                A personal guide to help plan your day, answer questions, and
+                provide assistance as needed
+              </span>
+            </li>
+          </ul>
+          <hr class="break" />
+          <a class="ticket-card-btn btn-cta" href="#">Buy Pass</a>
+        </div>
+      </section>
+
+      <div class="cta-banner">
+        <div class="container">
+          <h3 class="cta-banner-text">Check out our rides and attractions!</h3>
         </div>
       </div>
-    </div>
-        <div class="tiercontainer"><h1>Premium Pass</h1>
-          <ul>
-            <li><b>All Standard Pass Benefits:</b> Enjoy all the benefits of the Standard Pass.</li>
-            <li><b>Fast Pass Access:</b> Skip the lines with Fast Pass access to all rides and attractions.</li>
-            <li><b>Exclusive Shows:</b> Access to exclusive shows and performances not available to Standard Pass holders.</li>
-            <li><b>Free Souvenir Photo:</b> Receive a complimentary photo from the Sheikah Slate Photo Booth.</li>
-            <li><b>Hyrule Market Discounts:</b> Increased discount of 15% on all purchases at the Hyrule Market.</li>
-            <li><b>Reserved Seating:</b> Enjoy reserved seating at all shows and performances.</li>
-          </ul>
-          <a href="#popup" class="buy-btn">Buy Now</a>
-    </div>
-        <div class="tiercontainer"><h1>Elite Pass</h1>
-          <ul>
-            <li><b></b>All Premium Pass Benefits: Enjoy all the benefits of the Premium Pass.</li>
-            <li><b>VIP Parking:</b> Enjoy the convenience of VIP parking close to the park entrance.</li>
-            <li><b>Early Access:</b> Get a head start on the fun with early access to the park before it opens to the public.</li>
-            <li><b>Behind-the-Scenes Tours:</b> Gain exclusive access to behind-the-scenes tours of select attractions.</li>
-            <li><b>Meet and Greet with Characters:</b> Enjoy scheduled meet and greet sessions with your favorite Zelda characters.</li>
-            <li><b>Hyrule Market Discounts:</b> Top-tier discount of 20% on all purchases at the Hyrule Market.</li>
-            <li><b>Complimentary Dining:</b> Enjoy complimentary meals at the Kakariko Village Food Court.</li>
-            <li><b>Personal Park Guide:</b> A personal guide to help plan your day, answer questions, and provide assistance as needed.</li>
-          </ul>
-          <a href="#popup" class="buy-btn">Buy Now</a>
-    </div>
-    </section>
-    <footer>
-      <div class="footer-container">
-          <div class="footer-section">
-              <h3>Hyrule Adventure Park</h3>
-              <p>Enjoy the vast majority of rides and attractions  from Hyrule Kingdom!</p>
+
+      <!-- Attractions Sections -->
+      <section class="container attractions-info">
+        <div class="attraction-card">
+          <img class="attraction-img" src="../images/zora_river.jpg" />
+          <div class="attraction-desc">
+            <h2 class="attraction-title">Zora's River Rapids</h2>
+            <p class="attraction-desc-text">
+              Cool off on this exciting water ride that takes you through the
+              Zora's Domain. Watch out for the waterfalls!
+            </p>
           </div>
-          <div class="footer-section">
-              <h4>Contact Us!</h4>
-              <p>123 Park Street, Central Hyrule, Hyrule</p>
-              <p>Email: info@hyrulepark.com</p>
-              <p>Phone: +1 (555) 500-5500</p>
+        </div>
+
+        <div class="attraction-card">
+          <img class="attraction-img" src="../images/kokiri_forest.jpg" />
+          <div class="attraction-desc">
+            <h2 class="attraction-title">Kokiri Forest Adventure</h2>
+            <p class="attraction-desc-text">
+              Explore the magical Kokiri Forest in this enchanting walk-through
+              attraction. Meet friendly characters, discover hidden secrets, and
+              enjoy the serene beauty of the forest.
+            </p>
           </div>
-          <div class="footer-section">
-              <h4>Follow Us</h4>
-              <a>Facebook</a>
-              <a>Instagram</a>
-              <a>Twitter</a>
+        </div>
+
+        <div class="attraction-card">
+          <img class="attraction-img" src="../images/food_court.jpg" />
+          <div class="attraction-desc">
+            <h2 class="attraction-title">Kakariko Village Food Court</h2>
+            <p class="attraction-desc-text">
+              Satisfy your hunger with a variety of food options available at
+              our Kakariko Village Food Court. From hearty meals to quick
+              snacks, we've got you covered.
+            </p>
           </div>
+        </div>
+
+        <div class="attraction-card">
+          <img class="attraction-img" src="../images/photo_booth.jpg" />
+          <div class="attraction-desc">
+            <h2 class="attraction-title">Sheikah Slate Photo Booth</h2>
+            <p class="attraction-desc-text">
+              Capture your memories of the day with our Sheikah SlatePhoto
+              Booth. Dress up as your favorite characters and take home a
+              souvenir photo that will remind you of your adventure in our park.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Banner Component -->
+      <div class="cta-banner">
+        <div class="container">
+          <h3 class="cta-banner-text">Over 15 rides and attractions!</h3>
+          <a
+            class="btn-cta cta-banner-btn"
+            href="./pages/rides-attractions.html"
+            >Rides and Attractions</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-section footer-desc">
+          <h3>Hyrule Adventure Park</h3>
+          <p>
+            Enjoy the vast majority of rides and attractions from Hyrule
+            Kingdom!
+          </p>
+        </div>
+        <div class="footer-section footer-contact">
+          <h3>Contact Us!</h3>
+          <p>123 Park Street, Central Hyrule, Hyrule</p>
+          <p>Email: info@hyrulepark.com</p>
+          <p>Phone: +1 (555) 500-5500</p>
+        </div>
+        <div class="footer-section footer-socials">
+          <h3>Follow Us</h3>
+          <a>Facebook</a>
+          <a>Instagram</a>
+          <a>Twitter</a>
+        </div>
       </div>
       <div class="footer-bottom">
-          <p> © 2023 Hyrule Adventure Park. All rights reserved.</p>
+        <p>© 2023 Hyrule Adventure Park. All rights reserved.</p>
       </div>
-  </footer>
-  
+    </footer>
+    <div class="cta-bar">
+      <div class="container cta-bar-container">
+        <h4 class="cta-bar-title">
+          Your adventure is waiting! Get your tickets now!
+        </h4>
+        <a class="navbar-list-item-cta btn-cta" href="#">Buy Now</a>
+      </div>
+    </div>
   </body>
-  <script src="./js/index.js"></script> <!-- Javascript file -->
+  <script src="./js/index.js"></script>
 </html>
