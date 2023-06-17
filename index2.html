@@ -16,10 +16,17 @@ Batin Orene
     <!-- Navbar Component -->
     <nav class="navbar">
       <div class="container navbar-container">
-        <img class="navbar-logo" src="./images/logo.png" />
+        <a href="./index2.html">
+          <img class="navbar-logo" src="./images/logo.png" />
+        </a>
         <ul class="navbar-list">
           <li class="navbar-list-item">
-            <a class="navbar-list-item-nav" href="#">Attractions</a>
+            <a
+              class="navbar-list-item-nav"
+              href="./pages/rides-attractions.html"
+            >
+              Attractions
+            </a>
           </li>
           <li class="navbar-list-item">
             <a class="navbar-list-item-nav" href="#">About</a>
@@ -33,6 +40,9 @@ Batin Orene
 
     <!-- Main Component -->
     <main>
+      <div class="container">
+        <h1 class="main-title">Welcome to Hyrule Adventure Park!</h1>
+      </div>
       <!-- Carousel -->
       <section class="container carousel">
         <div class="carousel-slide">
@@ -196,6 +206,74 @@ Batin Orene
           <a class="ticket-card-btn btn-cta" href="#">Buy Pass</a>
         </div>
       </section>
+
+      <div class="cta-banner">
+        <div class="container">
+          <h3 class="cta-banner-text">Check out our rides and attractions!</h3>
+        </div>
+      </div>
+
+      <!-- Attractions Sections -->
+      <section class="container attractions-info">
+        <div class="attraction-card">
+          <img class="attraction-img" src="../images/zora_river.jpg" />
+          <div class="attraction-desc">
+            <h2 class="attraction-title">Zora's River Rapids</h2>
+            <p class="attraction-desc-text">
+              Cool off on this exciting water ride that takes you through the
+              Zora's Domain. Watch out for the waterfalls!
+            </p>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <img class="attraction-img" src="../images/kokiri_forest.jpg" />
+          <div class="attraction-desc">
+            <h2 class="attraction-title">Kokiri Forest Adventure</h2>
+            <p class="attraction-desc-text">
+              Explore the magical Kokiri Forest in this enchanting walk-through
+              attraction. Meet friendly characters, discover hidden secrets, and
+              enjoy the serene beauty of the forest.
+            </p>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <img class="attraction-img" src="../images/food_court.jpg" />
+          <div class="attraction-desc">
+            <h2 class="attraction-title">Kakariko Village Food Court</h2>
+            <p class="attraction-desc-text">
+              Satisfy your hunger with a variety of food options available at
+              our Kakariko Village Food Court. From hearty meals to quick
+              snacks, we've got you covered.
+            </p>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <img class="attraction-img" src="../images/photo_booth.jpg" />
+          <div class="attraction-desc">
+            <h2 class="attraction-title">Sheikah Slate Photo Booth</h2>
+            <p class="attraction-desc-text">
+              Capture your memories of the day with our Sheikah SlatePhoto
+              Booth. Dress up as your favorite characters and take home a
+              souvenir photo that will remind you of your adventure in our park.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Banner Component -->
+      <div class="cta-banner">
+        <div class="container">
+          <h3 class="cta-banner-text">Over 15 rides and attractions!</h3>
+          <a
+            class="btn-cta cta-banner-btn"
+            href="./pages/rides-attractions.html"
+            >Rides and Attractions</a
+          >
+        </div>
+      </div>
     </main>
 
     <!-- Footer Component -->
@@ -209,13 +287,13 @@ Batin Orene
           </p>
         </div>
         <div class="footer-section footer-contact">
-          <h4>Contact Us!</h4>
+          <h3>Contact Us!</h3>
           <p>123 Park Street, Central Hyrule, Hyrule</p>
           <p>Email: info@hyrulepark.com</p>
           <p>Phone: +1 (555) 500-5500</p>
         </div>
         <div class="footer-section footer-socials">
-          <h4>Follow Us</h4>
+          <h3>Follow Us</h3>
           <a>Facebook</a>
           <a>Instagram</a>
           <a>Twitter</a>
@@ -225,6 +303,14 @@ Batin Orene
         <p>© 2023 Hyrule Adventure Park. All rights reserved.</p>
       </div>
     </footer>
+    <div class="cta-bar">
+      <div class="container cta-bar-container">
+        <h4 class="cta-bar-title">
+          Your adventure is waiting! Get your tickets now!
+        </h4>
+        <a class="navbar-list-item-cta btn-cta" href="#">Buy Now</a>
+      </div>
+    </div>
   </body>
   <script src="./js/index.js"></script>
 </html>
