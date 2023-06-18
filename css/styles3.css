@@ -434,10 +434,14 @@ ol li p {
   text-align: justify;
   font-size: 20px;
   padding: 20px;
+  line-height: 30px;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 @media (max-width: 900px) {
   .about-us {
     font-size: 15px;
+    line-height: 20px;
   }
   .main-title {
     text-align: center;
