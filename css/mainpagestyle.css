@@ -1,18 +1,11 @@
-:root {
-  --green: #2a9d8f;
-  --darkblue: #264653;
-  --orange: #e76f51;
-  --yellow: #e9c46a;
-}
 body {
   /* This is the body of the page */
   padding: 0;
   margin: 0;
-  margin-top: 80px;
   list-style-type: none;
   color: white;
   font-family: Helvetica, Arial, sans-serif;
-  background-color: var(--green);
+  background-color: #2a9d8f;
 }
 .logocontainer .companylogo {
   /* This is the logo on the top left corner */
@@ -25,7 +18,7 @@ body {
   position: fixed; /* Set the navbar to fixed position, so it stays still when you scroll down and up */
   top: 0; /* Position the navbar at the top of the page, fixed position*/
   width: 100%; /* Full width, otherwise it only takes a fixed size of the screen width */
-  background-color: var(--darkblue);
+  background-color: #264653;
   display: flex; /* make the navbar adapt to screen size */
   justify-content: space-around;
   height: 80px;
@@ -61,15 +54,15 @@ nav .navbar-toggle p {
 }
 .navbar li:hover {
   /* Describes what happens when a link on navbar is hovered on*/
-  background-color: var(--orange);
+  background-color: #e76f51;
 }
 .navbar li:last-child:hover {
   padding: 20px;
-  background-color: var(--darkblue);
+  background-color: #264653;
 }
 footer {
   /* This is the footer */
-  background-color: var(--darkblue);
+  background-color: #264653;
   color: #fff;
   padding: 20px 0; /* 20px top and bottom, 0 left and right */
   font-family: Arial, sans-serif; /* font family */
@@ -130,7 +123,7 @@ footer {
   width: 100%;
   padding: 10px;
   text-align: center;
-  background-color: var(--green);
+  background-color: #2a9d8f;
   margin-left: -10px;
   color: #e9c46a;
   border: none;
@@ -141,7 +134,7 @@ footer {
 }
 
 .buy-btn:hover {
-  background-color: var(--orange);
+  background-color: #e76f51;
 }
 
 .popup {
@@ -151,7 +144,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #222;
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 9999;
 }
 
@@ -164,7 +157,7 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--darkblue);
+  background-color: #264653;
   padding: 20px;
   text-align: center;
   border-radius: 4px;
@@ -181,7 +174,7 @@ footer {
 
 .close-btn {
   padding: 10px 20px;
-  background-color: var(--darkblue);
+  background-color: #264653;
   color: #e9c46a;
   border: none;
   border-radius: 4px;
@@ -189,7 +182,7 @@ footer {
 }
 
 .close-btn:hover {
-  background-color: var(--green);
+  background-color: #2a9d8f;
 }
 
 #attractionslide {
@@ -220,7 +213,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #222;
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   font-size: 16px;
   top: 80px;
@@ -274,8 +267,8 @@ footer {
   /* This is the media query for the navbar */
   nav .navlist {
     display: grid;
-    position: absolute;
-    background-color: var(--darkblue);
+    postition: absolute;
+    background-color: #264653;
     width: 100%;
     transform: translateY(-400%);
     z-index: -1;
@@ -325,7 +318,7 @@ input:checked ~ .navlist {
 }
 .tiercontainer {
   flex: 1;
-  border: 2px solid var(--yellow); /* Add "solid" to specify the border style */
+  border: 2px solid #e9c46a; /* Add "solid" to specify the border style */
   background-color: #264653; /* Update the background color to a lighter tone */
   margin: 10px; /* Adjust the margin for a more compact look */
   padding: 20px; /* Add padding for better spacing within the containers */
@@ -336,7 +329,7 @@ input:checked ~ .navlist {
   text-align: center;
   font-size: 1.5em;
   margin: 0px;
-  color: var(--yellow);
+  color: #e9c46a;
 }
 .tiercontainer ul {
   padding-left: 20px;
