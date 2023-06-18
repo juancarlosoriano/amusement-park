@@ -10,6 +10,7 @@
   --dark-colour: #222;
 
   /* Breakpoints */
+  --min-width: 440px;
   --max-width: 980px;
 
   /* Fonts */
@@ -432,4 +433,23 @@ ol li p {
   color: var(--text-colour);
   text-align: justify;
   font-size: 20px;
+  padding: 20px;
+}
+@media (max-width: 900px) {
+  .about-us {
+    font-size: 15px;
+  }
+  .main-title {
+    text-align: center;
+  }
+  .faq-question-text {
+    text-align: center;
+  }
+  .faq-answer-text {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .footer-section {
+    margin-left: 5%;
+  }
 }

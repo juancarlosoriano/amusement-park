@@ -10,6 +10,7 @@
   --dark-colour: #222;
 
   /* Breakpoints */
+  --min--width: 440px;
   --max-width: 980px;
 
   /* Fonts */
@@ -399,4 +400,94 @@ main {
 .cta-bar-container .btn-cta {
   width: 100px;
   padding: 6px 18px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 900px) {
+  /* Adjust styles for smaller screens */
+  .navbar {
+    height: 60px;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-list-item {
+    margin: 10px 0;
+  }
+
+  .navbar-logo {
+    width: 50px;
+  }
+
+  .main-title {
+    font-size: 24px;
+  }
+
+  .carousel-desc {
+    padding: 20px;
+  }
+
+  .ticket-info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ticket-card {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .attractions-info {
+    justify-content: center;
+  }
+
+  .attraction-card {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  .footer-section {
+    margin-left: 5%;
+  }
+  .main-title {
+    text-align: center;
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: var(--min-width)) {
+  /* Adjust styles for larger screens */
+  .main-title {
+    font-size: 36px;
+  }
+
+  .carousel-desc {
+    padding: 40px;
+  }
+
+  .ticket-info {
+    justify-content: space-between;
+  }
+
+  .ticket-card {
+    width: 250px;
+    height: 920px;
+    margin-bottom: 40px;
+  }
+
+  .attractions-info {
+    justify-content: space-between;
+  }
+
+  .attraction-card {
+    width: 460px;
+    height: 650px;
+    min-width: 460px;
+    margin-bottom: 40px;
+  }
 }
