@@ -418,8 +418,10 @@ ol li p {
 }
 .faq-answer-text {
   color: var(--text-colour);
-  margin-right: 30px;
   font-size: 20px;
+  background-color: var(--main-accent);
+  border-radius: 10px;
+  padding: 20px;
 }
 .faq-question-text {
   font-size: 30px;
