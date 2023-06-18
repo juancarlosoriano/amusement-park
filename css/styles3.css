@@ -428,3 +428,8 @@ ol li p {
   font-family: var(--special-font);
   color: var(--secondary-accent);
 }
+.about-us {
+  color: var(--text-colour);
+  text-align: justify;
+  font-size: 20px;
+}
