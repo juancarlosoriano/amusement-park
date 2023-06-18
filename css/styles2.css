@@ -400,3 +400,43 @@ main {
   width: 100px;
   padding: 6px 18px;
 }
+
+/* FAQ Styles */
+.map-legend {
+  list-style-type: decimal;
+  margin-left: 40px;
+  color: var(--secondary-accent);
+}
+
+ol li p {
+  color: var(--text-colour);
+  margin-right: 30px;
+}
+
+.Legend {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.faq-answer-text {
+  color: var(--text-colour);
+  font-size: 20px;
+  background-color: var(--main-accent);
+  border-radius: 10px;
+  padding: 20px;
+}
+.faq-question-text {
+  font-size: 30px;
+  font-family: var(--special-font);
+  color: var(--secondary-accent);
+}
+
+.about-us {
+  color: var(--text-colour);
+  text-align: justify;
+  font-size: 20px;
+  padding: 20px;
+  line-height: 30px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
