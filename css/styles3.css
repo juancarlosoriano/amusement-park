@@ -1,6 +1,8 @@
 /* CSS Variables */
 :root {
   /* Colours */
+  /* These are custom variables that store color values. They are declared in the root pseudo-class which means they can be accessed throughout the entire document. */
+  --main-colour: #299d8f;
   --main-colour: #299d8f;
   --main-accent: #274653;
   --secondary-accent: #e9c46a;
@@ -10,10 +12,12 @@
   --dark-colour: #222;
 
   /* Breakpoints */
+  /* These variables are used for responsive design, to apply different styles for different screen sizes. */
   --min-width: 440px;
   --max-width: 980px;
 
   /* Fonts */
+  /* This variable is storing a list of fonts to be used throughout the document. If the first font is not available on the user's computer, the next one is used */
   --special-font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -35,27 +39,32 @@ ol {
 
 a,
 a:visited {
+  /* Removes underline and text decoration for links */
   text-decoration: none;
 }
 
 /* Sizing Styles */
 .container {
+  /* Defines a container with maximum width and centered alignment */
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
 }
 
 main {
+  /* Adds margin to the main content area */
   margin-top: 120px;
 }
 
 .break {
+  /* Creates a visual break with a border */
   border: 1px solid;
   border-color: #f8fcfd;
   margin-bottom: 15px;
 }
 
 /* Button Styles */
+/* Styles for call-to-action buttons */
 .btn-cta {
   display: block;
   background-color: var(--main-colour);
@@ -70,16 +79,19 @@ main {
 }
 
 .btn-cta:hover {
+  /* Hover effect styles for call-to-action buttons */
   background-color: var(--highlight-colour);
   border-color: var(--secondary-accent);
 }
 
 .ticket-card-btn {
+  /* Styles for ticket card buttons */
   margin-top: 20px;
   padding: 16px 0;
 }
 
 .ticket-card-btn:hover {
+  /* Hover effect styles for ticket card buttons */
   text-decoration: none;
 }
 
@@ -386,78 +398,97 @@ main {
 }
 
 .cta-bar-container {
+  /* This block sets up a container for a Call-to-action (CTA) bar.
+   It uses Flexbox for alignment and spacing of the items within. */
   height: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* Aligns items horizontally and evenly spaces them */
+  align-items: center; /* Aligns items vertically in the center */
 }
 
+/* This block styles the title text within the CTA bar. */
 .cta-bar-title {
-  font-family: var(--special-font);
-  font-size: 20px;
+  font-family: var(--special-font); /* Uses a special font declared in :root */
+  font-size: 20px; /* Sets font size */
 }
 
+/* This block styles the CTA button within the CTA bar container. */
 .cta-bar-container .btn-cta {
   width: 100px;
   padding: 6px 18px;
 }
 
+/* This block styles the list items for a map legend. */
 .map-legend {
-  list-style-type: decimal;
-  margin-left: 40px;
-  color: var(--secondary-accent);
+  list-style-type: decimal; /* The items are numbered */
+  margin-left: 40px; /* Adds space to the left of the list */
+  color: var(
+    --secondary-accent
+  ); /* Uses a secondary accent color declared in :root */
 }
 
+/* This block styles paragraph text within list items. */
 ol li p {
-  color: var(--text-colour);
-  margin-right: 30px;
+  color: var(--text-colour); /* Sets the color of the text */
+  margin-right: 30px; /* Adds space to the right of the text */
 }
-.Legend {
+
+.legend {
+  /* This block arranges items within a Legend section using Flexbox. */
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-between; /* Aligns items horizontally and evenly spaces them */
+  align-items: flex-start; /* Aligns items vertically at the top */
 }
+/* This block styles the text for the answers in a FAQ section. */
 .faq-answer-text {
-  color: var(--text-colour);
-  font-size: 20px;
-  background-color: var(--main-accent);
-  border-radius: 10px;
-  padding: 20px;
+  color: var(--text-colour); /* Sets the color of the text */
+  font-size: 20px; /* Sets font size */
+  background-color: var(--main-accent); /* Sets the background color */
+  border-radius: 10px; /* Rounds the corners of the element */
+  padding: 20px; /* Adds space around the text */
 }
+/* This block styles the text for the questions in a FAQ section. */
 .faq-question-text {
-  font-size: 30px;
-  font-family: var(--special-font);
-  color: var(--secondary-accent);
+  font-size: 30px; /* Sets font size */
+  font-family: var(--special-font); /* Uses a special font declared in :root */
+  color: var(
+    --secondary-accent
+  ); /* Uses a secondary accent color declared in :root */
 }
+/* This block styles the text for an About Us section. */
 .about-us {
-  color: var(--text-colour);
-  text-align: justify;
-  font-size: 20px;
-  padding: 20px;
-  line-height: 30px;
-  margin-left: 2%;
-  margin-right: 2%;
+  color: var(--text-colour); /* Sets the color of the text */
+  text-align: justify; /* Justifies the text */
+  font-size: 20px; /* Sets font size */
+  padding: 20px; /* Adds space around the text */
+  line-height: 30px; /* Sets the height of each line of text */
+  margin-left: 2%; /* Adds space to the left of the text */
+  margin-right: 2%; /* Adds space to the right of the text */
 }
+/* This block sets up responsive design for screen widths of 900px or less. */
 @media (max-width: 900px) {
+  /* Adjusts the font size and line height for the About Us section */
   .about-us {
     font-size: 15px;
     line-height: 20px;
   }
-  .main-title {
-    text-align: center;
-  }
+  /* Centers the main title and FAQ question text */
+  .main-title,
   .faq-question-text {
     text-align: center;
   }
+  /* Adds left and right margins to the FAQ answer text */
   .faq-answer-text {
     margin-left: 5%;
     margin-right: 5%;
   }
+  /* Adds left margin to the footer section */
   .footer-section {
     margin-left: 5%;
   }
 }
 
+/* These blocks set up and animate a border for each nav list item on hover */
 .navbar-list-item-nav {
   position: relative;
   display: inline-block;
@@ -478,22 +509,26 @@ ol li p {
   transition: opacity 200ms ease-in-out;
 }
 
+/* The ::before pseudo-element positions the border at the top left on hover */
 .navbar-list-item-nav:before {
   top: -0.125rem;
   left: 0;
 }
 
+/* The ::after pseudo-element positions the border at the bottom right on hover */
 .navbar-list-item-nav:after {
   bottom: 0;
   right: 0;
 }
 
+/* This block animates the border from the top left on hover */
 .navbar-list-item-nav:hover:before {
-  width: 100%; /* Adjust the width to your preference */
-  height: 100%;
-  opacity: 1;
-  border-top: 0.125rem solid #ecf0f1; /* Use the desired border color */
-  border-right: 0.125rem solid #ecf0f1;
+  width: 100%; /* Adjusts the width */
+  height: 100%; /* Adjusts the height */
+  opacity: 1; /* Makes the border visible */
+  border-top: 0.125rem solid #ecf0f1; /* Adds a top border */
+  border-right: 0.125rem solid #ecf0f1; /* Adds a right border */
+  /* Specifies the timing function for the transition */
   transition: width 300ms cubic-bezier(0.07, 0.62, 0.61, 1),
     height 150ms 300ms cubic-bezier(0.07, 0.62, 0.61, 1);
 }
@@ -504,6 +539,17 @@ ol li p {
   opacity: 1;
   border-bottom: 0.125rem solid #ecf0f1; /* Use the desired border color */
   border-left: 0.125rem solid #ecf0f1;
+  transition: width 300ms cubic-bezier(0.07, 0.62, 0.61, 1),
+    height 150ms 300ms cubic-bezier(0.07, 0.62, 0.61, 1);
+}
+/* This block animates the border from the bottom right on hover */
+.navbar-list-item-nav:hover:after {
+  width: 100%; /* Adjusts the width */
+  height: 100%; /* Adjusts the height */
+  opacity: 1; /* Makes the border visible */
+  border-bottom: 0.125rem solid #ecf0f1; /* Adds a bottom border */
+  border-left: 0.125rem solid #ecf0f1; /* Adds a left border */
+  /* Specifies the timing function for the transition */
   transition: width 300ms cubic-bezier(0.07, 0.62, 0.61, 1),
     height 150ms 300ms cubic-bezier(0.07, 0.62, 0.61, 1);
 }

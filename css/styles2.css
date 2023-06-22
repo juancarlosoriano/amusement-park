@@ -491,3 +491,68 @@ main {
     margin-bottom: 40px;
   }
 }
+/* These blocks set up and animate a border for each nav list item on hover */
+.navbar-list-item-nav {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-list-item-nav:before,
+.navbar-list-item-nav:after {
+  display: block;
+  content: " ";
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+/* The ::before pseudo-element positions the border at the top left on hover */
+.navbar-list-item-nav:before {
+  top: -0.125rem;
+  left: 0;
+}
+
+/* The ::after pseudo-element positions the border at the bottom right on hover */
+.navbar-list-item-nav:after {
+  bottom: 0;
+  right: 0;
+}
+
+/* This block animates the border from the top left on hover */
+.navbar-list-item-nav:hover:before {
+  width: 100%; /* Adjusts the width */
+  height: 100%; /* Adjusts the height */
+  opacity: 1; /* Makes the border visible */
+  border-top: 0.125rem solid #ecf0f1; /* Adds a top border */
+  border-right: 0.125rem solid #ecf0f1; /* Adds a right border */
+  /* Specifies the timing function for the transition */
+  transition: width 300ms cubic-bezier(0.07, 0.62, 0.61, 1),
+    height 150ms 300ms cubic-bezier(0.07, 0.62, 0.61, 1);
+}
+
+.navbar-list-item-nav:hover:after {
+  width: 100%; /* Adjust the width to your preference */
+  height: 100%;
+  opacity: 1;
+  border-bottom: 0.125rem solid #ecf0f1; /* Use the desired border color */
+  border-left: 0.125rem solid #ecf0f1;
+  transition: width 300ms cubic-bezier(0.07, 0.62, 0.61, 1),
+    height 150ms 300ms cubic-bezier(0.07, 0.62, 0.61, 1);
+}
+/* This block animates the border from the bottom right on hover */
+.navbar-list-item-nav:hover:after {
+  width: 100%; /* Adjusts the width */
+  height: 100%; /* Adjusts the height */
+  opacity: 1; /* Makes the border visible */
+  border-bottom: 0.125rem solid #ecf0f1; /* Adds a bottom border */
+  border-left: 0.125rem solid #ecf0f1; /* Adds a left border */
+  /* Specifies the timing function for the transition */
+  transition: width 300ms cubic-bezier(0.07, 0.62, 0.61, 1),
+    height 150ms 300ms cubic-bezier(0.07, 0.62, 0.61, 1);
+}
