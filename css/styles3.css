@@ -457,3 +457,53 @@ ol li p {
     margin-left: 5%;
   }
 }
+
+.navbar-list-item-nav {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-list-item-nav:before,
+.navbar-list-item-nav:after {
+  display: block;
+  content: " ";
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.navbar-list-item-nav:before {
+  top: -0.125rem;
+  left: 0;
+}
+
+.navbar-list-item-nav:after {
+  bottom: 0;
+  right: 0;
+}
+
+.navbar-list-item-nav:hover:before {
+  width: 100%; /* Adjust the width to your preference */
+  height: 100%;
+  opacity: 1;
+  border-top: 0.125rem solid #ecf0f1; /* Use the desired border color */
+  border-right: 0.125rem solid #ecf0f1;
+  transition: width 300ms cubic-bezier(0.07, 0.62, 0.61, 1),
+    height 150ms 300ms cubic-bezier(0.07, 0.62, 0.61, 1);
+}
+
+.navbar-list-item-nav:hover:after {
+  width: 100%; /* Adjust the width to your preference */
+  height: 100%;
+  opacity: 1;
+  border-bottom: 0.125rem solid #ecf0f1; /* Use the desired border color */
+  border-left: 0.125rem solid #ecf0f1;
+  transition: width 300ms cubic-bezier(0.07, 0.62, 0.61, 1),
+    height 150ms 300ms cubic-bezier(0.07, 0.62, 0.61, 1);
+}
