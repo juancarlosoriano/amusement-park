@@ -1,0 +1,239 @@
+/* CSS Variables */
+:root {
+  /* Colours */
+  --main-colour: #299d8f;
+  --main-accent: #274653;
+  --secondary-accent: #e9c46a;
+  --neutral-colour: #f8fcfd;
+  --text-colour: #fff;
+  --highlight-colour: #e76f51;
+  --dark-colour: #222;
+
+  /* Breakpoints */
+  --max-width: 980px;
+
+  /* Fonts */
+  --special-font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: var(--special-font);
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+/* Remove number spinner arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+/* Style Input Elements */
+input,
+select,
+label {
+  display: block;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 4px;
+  color: var(--neutral-colour);
+}
+
+input,
+select {
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 12px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: var(--neutral-colour);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--highlight-colour);
+}
+
+/* CSS Grid for Checkout Summary */
+#shopping-checkout {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  border: 4px solid;
+  border-color: var(--secondary-accent);
+  border-radius: 5px;
+  padding: 10px 30px;
+  background-color: var(--main-accent);
+}
+
+.item-1 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.item-2 {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+.item-3 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.item-4 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.item-5 {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+.item-6 {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+
+.item-7 {
+  grid-row: 4 / 5;
+  grid-column: 1 / 2;
+}
+
+.item-8 {
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+}
+
+.grid-item {
+  font-size: 18px;
+}
+
+/* Credit Card Fields Styles */
+#cc-number {
+  width: 175px;
+}
+
+#cc-code {
+  width: 55px;
+}
+
+.form-el-inline {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+select.form-el-inline {
+  width: 70px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--secondary-accent);
+}
+
+.shopping-card-selection {
+  width: 100%;
+  font-size: 16px;
+  border: 3px solid;
+  border-color: var(--neutral-colour);
+  margin-bottom: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.shopping-card-selection p {
+  margin: 15px 0 15px 15px;
+}
+
+.shopping-card-selection--active {
+  border-color: var(--secondary-accent);
+  color: var(--secondary-accent);
+  background-color: var(--highlight-colour);
+}
+
+#shopping-cc-info {
+  margin: 30px 0;
+}
+
+/* Checkout Button and Modal Styles */
+#btn-checkout {
+  cursor: pointer;
+}
+
+#checkout-modal {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.checkout-modal-desc {
+  width: 400px;
+  height: 250px;
+  margin: 20% auto 0;
+  background-color: var(--main-accent);
+  border: 2px solid;
+  border-color: var(--secondary-accent);
+  border-radius: 5px;
+  padding: 20px 30px;
+}
+
+#modal-title {
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#modal-message {
+  margin: 20px 0;
+  line-height: 20px;
+  text-align: center;
+}
+
+#btn-modal-dismiss {
+  cursor: pointer;
+  float: right;
+  font-size: 26px;
+}
+
+#btn-modal-dismiss:hover {
+  color: var(--highlight-colour);
+}
+
+#btn-modal-return {
+  padding: 10px 0;
+  cursor: pointer;
+}
