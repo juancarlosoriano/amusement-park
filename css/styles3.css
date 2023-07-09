@@ -440,7 +440,7 @@ ol li p {
   align-items: flex-start; /* Aligns items vertically at the top */
 }
 /* This block styles the text for the answers in a FAQ section. */
-.faq-answer-text {
+.faq-answer-text {// Styles the text for the answers in a FAQ section
   color: var(--text-colour); /* Sets the color of the text */
   font-size: 20px; /* Sets font size */
   background-color: var(--main-accent); /* Sets the background color */
@@ -448,7 +448,7 @@ ol li p {
   padding: 20px; /* Adds space around the text */
 }
 /* This block styles the text for the questions in a FAQ section. */
-.faq-question-text {
+.faq-question-text {// Styles the text for the questions in a FAQ section
   font-size: 30px; /* Sets font size */
   font-family: var(--special-font); /* Uses a special font declared in :root */
   color: var(
@@ -456,7 +456,7 @@ ol li p {
   ); /* Uses a secondary accent color declared in :root */
 }
 /* This block styles the text for an About Us section. */
-.about-us {
+.about-us { // Styles the text for an About Us section
   color: var(--text-colour); /* Sets the color of the text */
   text-align: justify; /* Justifies the text */
   font-size: 20px; /* Sets font size */
@@ -468,7 +468,7 @@ ol li p {
 /* This block sets up responsive design for screen widths of 900px or less. */
 @media (max-width: 900px) {
   /* Adjusts the font size and line height for the About Us section */
-  .about-us {
+  .about-us { 
     font-size: 15px;
     line-height: 20px;
   }
