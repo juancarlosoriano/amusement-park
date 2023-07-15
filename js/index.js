@@ -52,6 +52,7 @@ const setCarouselButtons = () => {
 const setCarousel = () => {
   carouselImage = document.getElementById("carousel-img");
   carouselImage.src = CAROUSEL_IMAGES[carouselIndex];
+  carouselImage.alt = CAROUSEL_TITLES[carouselIndex];
 
   carouselTitle = document.getElementById("carousel-desc-title");
   carouselTitle.innerHTML = CAROUSEL_TITLES[carouselIndex];
