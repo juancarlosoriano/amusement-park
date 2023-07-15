@@ -1,0 +1,233 @@
+<!-- 
+Authors:
+Juan Carlo Soriano 
+Batin Orene
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rides and Attractions | Legend of Zelda Amusement Park</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/shopping.css" />
+  </head>
+  <body id="main-body">
+    <!-- Navbar Component -->
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="../index.html">
+          <img class="navbar-logo" src="../images/logo.png" />
+        </a>
+        <ul class="navbar-list">
+          <li class="navbar-list-item">
+            <a class="navbar-list-item-nav" href="./rides-attractions.html">
+              Attractions
+            </a>
+          </li>
+          <li class="navbar-list-item">
+            <a class="navbar-list-item-nav" href="./about.html">About</a>
+          </li>
+          <li class="navbar-list-item">
+            <a class="navbar-list-item-cta btn-cta" href="./shopping.html"
+              >Buy Now</a
+            >
+          </li>
+        </ul>
+        <div id="navbar-hamburger-btn" class="navbar-hamburger-btn">
+          <img src="../images/hamburger.png" />
+        </div>
+      </div>
+    </nav>
+
+    <!-- Nav Modal for Narrow Screens -->
+    <nav id="nav-modal" class="nav-modal">
+      <a id="nav-modal-btn-dismiss">×</a>
+      <ul class="nav-modal-list">
+        <li class="nav-modal-list-item">
+          <a class="navbar-list-item-nav" href="../index.html"> Home </a>
+        </li>
+        <li class="nav-modal-list-item">
+          <a class="navbar-list-item-nav" href="./rides-attractions.html">
+            Attractions
+          </a>
+        </li>
+        <li class="nav-modal-list-item">
+          <a class="navbar-list-item-nav" href="./about.html">About</a>
+        </li>
+        <li class="nav-modal-list-item">
+          <a class="navbar-list-item-cta btn-cta" href="./shopping.html"
+            >Buy Now</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Component -->
+    <main>
+      <section class="container shopping">
+        <form class="shopping-cart">
+          <!-- Choose one type of pass only -->
+          <h1>Select Your Passes</h1>
+          <div id="shopping-card-selections"></div>
+
+          <!-- Choose the number of passes to buy -->
+          <h2>Select the number of passes</h2>
+          <div id="shopping-item-selection"></div>
+
+          <!-- Shopping Cart Checkout Details -->
+          <h2>Checkout Details</h2>
+          <div id="shopping-checkout">
+            <p class="grid-item item-1">
+              <span id="checkoutPassType">Standard</span> Passes x
+              <span id="checkoutPassNum">1</span>
+            </p>
+            <p class="grid-item item-2">
+              <span id="checkoutSubtotal">100.00</span>
+            </p>
+            <p class="grid-item item-3">Fees</p>
+            <p class="grid-item item-4">$10.00</p>
+            <p class="grid-item item-5">Taxes (10%)</p>
+            <p class="grid-item item-6">
+              <span id="checkoutTaxes">$11.00</span>
+            </p>
+            <p class="grid-item item-7">Total</p>
+            <p class="grid-item item-8">
+              <span id="checkoutTotal">$121.00</span>
+            </p>
+          </div>
+
+          <h2>Billing Details</h2>
+          <div id="shopping-billing">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="First name"
+              required
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Last name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+
+            <div id="shopping-cc-info">
+              <label for="cc-number" class="form-el-inline"
+                >Credit Card Number</label
+              >
+              <input
+                type="number"
+                id="cc-number"
+                name="cc-number"
+                class="form-el-inline"
+                placeholder="XXXXXXXXXXXXXXXX"
+                required
+              />
+
+              <label class="form-el-inline" for="lname">Security Code</label>
+              <input
+                class="form-el-inline"
+                type="number"
+                id="cc-code"
+                name="cc-code"
+                placeholder="XXX"
+                required
+              />
+            </div>
+
+            <!-- Billing Address Information -->
+            <h3>Billing Address</h3>
+            <label for="street1">Street Address Line 1</label>
+            <input id="street1" type="text" name="street1" required />
+
+            <label for="street2">Street Address Line 2</label>
+            <input id="street2" type="text" name="street2" />
+
+            <label for="city">City</label>
+            <input id="city" type="text" name="city" required />
+
+            <label for="state">State/Province</label>
+            <input id="state" type="text" name="state" required />
+
+            <label for="postcode">Postal/Zip Code</label>
+            <input id="postcode" type="text" name="postcode" required />
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="canada">Canada</option>
+              <option value="turkey">Turkey</option>
+              <option value="uk">United Kingdom</option>
+              <option value="us">United States</option>
+            </select>
+          </div>
+        </form>
+      </section>
+      <div class="cta-banner">
+        <div class="container">
+          <a id="btn-checkout" class="btn-cta cta-banner-btn"
+            >Confirm Purchase</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-section footer-desc">
+          <h3>Hyrule Adventure Park</h3>
+          <p>
+            Enjoy the vast majority of rides and attractions from Hyrule
+            Kingdom!
+          </p>
+        </div>
+        <div class="footer-section footer-contact">
+          <h3>Contact Us!</h3>
+          <p>123 Park Street, Central Hyrule, Hyrule</p>
+          <p>Email: info@hyrulepark.com</p>
+          <p>Phone: +1 (555) 500-5500</p>
+        </div>
+        <div class="footer-section footer-socials">
+          <h3>Follow Us</h3>
+          <p>Facebook: Hyrule Adventure Park</p>
+          <p>Instagram: @hyrulepark</p>
+          <p>Twitter: @hyrulepark</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2023 Hyrule Adventure Park. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal">
+      <div id="checkout-model-desc-error" class="checkout-modal-desc">
+        <a id="btn-modal-dismiss">×</a>
+        <h2 id="modal-title">Thanks you for your purchase!</h2>
+        <p id="modal-message">
+          Missing or incorrect required fields! Please check the information you
+          provided.
+        </p>
+        <a id="btn-modal-return" class="btn-cta" href="../index.html">Return</a>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="../js/shopping.js"></script>
+</html>

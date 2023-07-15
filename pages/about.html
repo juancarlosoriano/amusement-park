@@ -9,9 +9,325 @@ Batin Orene
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Legend of Zelda Amusement Park</title>
-    <link rel="stylesheet" href="./css/mainpagestyle.css" />
+    <title>About The Park | Legend of Zelda Amusement Park</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/about.css" />
   </head>
-  <body>
+  <body id="main-body">
+    <!-- Navbar Component -->
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="../index.html">
+          <img class="navbar-logo" src="../images/logo.png" />
+        </a>
+        <ul class="navbar-list">
+          <li class="navbar-list-item">
+            <a class="navbar-list-item-nav" href="./rides-attractions.html">
+              Attractions
+            </a>
+          </li>
+          <li class="navbar-list-item">
+            <a class="navbar-list-item-nav" href="./about.html">About</a>
+          </li>
+          <li class="navbar-list-item">
+            <a class="navbar-list-item-cta btn-cta" href="./shopping.html"
+              >Buy Now</a
+            >
+          </li>
+        </ul>
+        <div id="navbar-hamburger-btn" class="navbar-hamburger-btn">
+          <img src="../images/hamburger.png" />
+        </div>
+      </div>
+    </nav>
+
+    <!-- Nav Modal for Narrow Screens -->
+    <nav id="nav-modal" class="nav-modal">
+      <a id="nav-modal-btn-dismiss">×</a>
+      <ul class="nav-modal-list">
+        <li class="nav-modal-list-item">
+          <a class="navbar-list-item-nav" href="../index.html"> Home </a>
+        </li>
+        <li class="nav-modal-list-item">
+          <a class="navbar-list-item-nav" href="./rides-attractions.html">
+            Attractions
+          </a>
+        </li>
+        <li class="nav-modal-list-item">
+          <a class="navbar-list-item-nav" href="./about.html">About</a>
+        </li>
+        <li class="nav-modal-list-item">
+          <a class="navbar-list-item-cta btn-cta" href="./shopping.html"
+            >Buy Now</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Component -->
+    <main>
+      <section>
+        <div class="cta-banner">
+          <div class="container">
+            <h1 class="cta-banner-text about-us-title">About The Park</h1>
+          </div>
+        </div>
+        <div class="container">
+          <p class="about-us-text">
+            Welcome to our unique and exciting theme park, where the magical
+            world of Hyrule comes alive. Established in 2023, we offer a
+            captivating blend of adventure, thrill, and fantasy that immerses
+            our guests in the beloved universe of The Legend of Zelda. Each
+            ride, attraction, and service is thoughtfully designed to bring
+            iconic elements of Hyrule to life, from the towering peaks of Death
+            Mountain to the mysterious depths of Zora's Domain.
+          </p>
+          <p class="about-us-text">
+            We are proud to provide a fun, safe, and inclusive environment that
+            caters to guests of all ages. Our park encompasses the spirit of
+            adventure and exploration that has defined the Zelda series for
+            decades. Whether you're taking on Ganon in our high-thrill roller
+            coasters, embarking on a Triforce treasure hunt, or savoring the
+            delights at the Kakariko Village Food Court, we're dedicated to
+            making your experience unforgettable. Join us for a journey of a
+            lifetime through the mystical landscapes of Hyrule, right here at
+            our theme park.
+          </p>
+        </div>
+      </section>
+      <div class="container">
+        <h1 class="main-title">Hyrule Adventure Park Map</h1>
+      </div>
+
+      <!-- Map Section-->
+      <section class="container map">
+        <div class="map-box">
+          <img class="map-img" src="../images/map.png" />
+          <div class="map-desc legend">
+            <h2 class="legend-title">Map Legend</h2>
+            <div class="legend-box">
+              <ol class="legend-list">
+                <li class="legend-item">
+                  <p>Hyrule Heroic Journey Coaster</p>
+                </li>
+                <li class="legend-item">
+                  <p>Ganon's Tower Terror Inverted Coaster</p>
+                </li>
+                <li class="legend-item">
+                  <p>Epona's Wild Ride Coaster</p>
+                </li>
+                <li class="legend-item">
+                  <p>Triforce Treasure Hunt</p>
+                </li>
+                <li class="legend-item">
+                  <p>Ocarina of Time Travel</p>
+                </li>
+                <li class="legend-item">
+                  <p>Zora's River Rapids</p>
+                </li>
+                <li class="legend-item">
+                  <p>Kokiri FOrest ADventure</p>
+                </li>
+                <li class="legend-item">
+                  <p>Gerudo Valley Go-Karts</p>
+                </li>
+                <li class="legend-item">
+                  <p>Sheikah Stealth Training</p>
+                </li>
+              </ol>
+              <ol class="legend-list" start="10">
+                <li class="legend-item">
+                  <p>Goron Mountain Climbing</p>
+                </li>
+                <li class="legend-item">
+                  <p>Rito Flight School</p>
+                </li>
+                <li class="legend-item">
+                  <p>Hyrule Castle Haunted House</p>
+                </li>
+                <li class="legend-item">
+                  <p>Link's Archery Challenge</p>
+                </li>
+                <li class="legend-item">
+                  <p>Fairy First Aid</p>
+                </li>
+                <li class="legend-item">
+                  <p>Lon Lon Ranch Petting Zoo</p>
+                </li>
+                <li class="legend-item">
+                  <p>Hyrule Market</p>
+                </li>
+                <li class="legend-item">
+                  <p>Kakariko Village Food Court</p>
+                </li>
+                <li class="legend-item">
+                  <p>Sheikah Slate Photo Booth</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The main container includes questions and answers consequently.-->
+      <!-- The questions use h3 class to point that it's a third grade header and answers use just paragraph tags.-->
+      <!-- list items were not used here as the items do not appear in any relation with one and another.-->
+      <section class="faq">
+        <div class="cta-banner">
+          <div class="container">
+            <h2 class="cta-banner-text">FAQ</h2>
+          </div>
+        </div>
+        <div class="faq-container">
+          <div class="container">
+            <h3 class="faq-question-text">
+              What are the operating hours of the park?
+            </h3>
+            <p class="faq-answer-text">
+              The park is open from 10:00 AM to 8:00 PM from Monday to Sunday.
+            </p>
+            <h3 class="faq-question-text">Are pets allowed in the park?</h3>
+            <p class="faq-answer-text">
+              Unfortunately, pets are not allowed in the park. However, we do
+              have a petting zoo at Lon Lon Ranch where guests can interact with
+              our friendly farm animals.
+            </p>
+            <h3 class="faq-question-text">
+              What should I do if I or my child gets injured?
+            </h3>
+            <p class="faq-answer-text">
+              Our Fairy First Aid station is staffed with trained professionals
+              who can assist with minor injuries or health concerns. In case of
+              a major emergency, please dial 911 immediately.
+            </p>
+            <h3 class="faq-question-text">
+              Can I bring my own food and drinks into the park?
+            </h3>
+            <p class="faq-answer-text">
+              Outside food and drinks are not allowed, but we have a wide
+              variety of food options available at the Kakariko Village Food
+              Court.
+            </p>
+            <h3 class="faq-question-text">
+              How intense are the roller coasters?
+            </h3>
+            <p class="faq-answer-text">
+              Our park offers roller coasters ranging from family-friendly to
+              high-thrill. The intensity level for each ride is clearly marked
+              at the entrance.
+            </p>
+            <h3 class="faq-question-text">
+              What attractions are suitable for younger children?
+            </h3>
+            <p class="faq-answer-text">
+              Our Kokiri Forest Adventure and Lon Lon Ranch Petting Zoo are
+              perfect for younger children. We also have the Triforce Treasure
+              Hunt, which is an interactive, family-friendly attraction.
+            </p>
+            <h3 class="faq-question-text">
+              What do I do if I lose something in the park?
+            </h3>
+            <p class="faq-answer-text">
+              Please visit our Lost and Found located near the entrance. You can
+              also inform any of our park employees and they will assist you.
+            </p>
+            <h3 class="faq-question-text">
+              Do you offer any special rates for groups or schools?
+            </h3>
+            <p class="faq-answer-text">
+              We offer discounted rates for groups of 15 or more and for school
+              field trips. Please contact our customer service for more details.
+            </p>
+            <h3 class="faq-question-text">
+              Is the park wheelchair accessible?
+            </h3>
+            <p class="faq-answer-text">
+              Yes, our park is designed to be wheelchair accessible. We also
+              have wheelchairs available for rent at the Guest Services office.
+            </p>
+            <h3 class="faq-question-text">
+              What kind of food options are available at the Kakariko Village
+              Food Court?
+            </h3>
+            <p class="faq-answer-text">
+              The Kakariko Village Food Court offers a variety of options,
+              including burgers, pizza, salads, vegetarian dishes, desserts, and
+              more. We also offer meals designed for children.
+            </p>
+            <h3 class="faq-question-text">
+              Do I need any special equipment or clothing for the "Goron
+              Mountain Climbing" attraction?
+            </h3>
+            <p class="faq-answer-text">
+              No special equipment is necessary. The park provides safety
+              equipment for the attraction. We recommend wearing comfortable
+              clothing and closed-toe shoes.
+            </p>
+            <h3 class="faq-question-text">
+              Can I host a party or event at the park?
+            </h3>
+            <p class="faq-answer-text">
+              Absolutely! We offer various packages for birthday parties,
+              corporate events, and more. Please contact our event services team
+              for more information.
+            </p>
+            <h3 class="faq-question-text">
+              Are there lockers available for storing personal belongings?
+            </h3>
+            <p class="faq-answer-text">
+              Yes, lockers are available for rent near the park entrance.
+            </p>
+            <h3 class="faq-question-text">What happens if it rains?</h3>
+            <p class="faq-answer-text">
+              Many of our attractions are indoors or covered, so they remain
+              open in light rain. In case of severe weather conditions, certain
+              attractions may temporarily close for the safety of our guests.
+              Please check our website or social media channels for real-time
+              updates.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-section footer-desc">
+          <h3>Hyrule Adventure Park</h3>
+          <p>
+            Enjoy the vast majority of rides and attractions from Hyrule
+            Kingdom!
+          </p>
+        </div>
+        <div class="footer-section footer-contact">
+          <h3>Contact Us!</h3>
+          <p>123 Park Street, Central Hyrule, Hyrule</p>
+          <p>Email: info@hyrulepark.com</p>
+          <p>Phone: +1 (555) 500-5500</p>
+        </div>
+        <div class="footer-section footer-socials">
+          <h3>Follow Us</h3>
+          <p>Facebook: Hyrule Adventure Park</p>
+          <p>Instagram: @hyrulepark</p>
+          <p>Twitter: @hyrulepark</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2023 Hyrule Adventure Park. All rights reserved.</p>
+      </div>
+    </footer>
+    <div class="cta-bar">
+      <div class="container cta-bar-container">
+        <h4 class="cta-bar-title">
+          Your adventure is waiting! Get your tickets now!
+        </h4>
+        <a class="navbar-list-item-cta btn-cta" href="./shopping.html"
+          >Buy Pass</a
+        >
+      </div>
+    </div>
   </body>
+  <script type="module" src="../js/page.js"></script>
 </html>
