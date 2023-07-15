@@ -1,3 +1,8 @@
+/* Authors:
+Juan Carlo Soriano
+Batin Orene
+*/
+
 /* CSS Variables */
 :root {
   /* Colours */
@@ -15,6 +20,14 @@
   /* Fonts */
   --special-font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* CSS Reset Styles */
@@ -88,7 +101,7 @@ main {
   top: 0;
   width: 100vw;
   background-color: var(--main-accent);
-  height: 80px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,6 +148,64 @@ main {
   font-size: 18px;
 }
 
+.navbar-hamburger-btn {
+  border-radius: 3px;
+  background-color: var(--main-colour);
+  width: 50px;
+  height: 46px;
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-hamburger-btn img {
+  width: 30px;
+  height: 30px;
+  margin: 8px 10px;
+}
+
+.nav-modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  background-color: var(--dark-colour);
+  opacity: 95%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  visibility: hidden;
+}
+
+.nav-modal-list {
+  width: 50vw;
+  margin: 100px auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.nav-modal-list-item {
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.nav-modal-list-item .navbar-list-item-nav {
+  font-family: var(--special-font);
+  font-size: 1.2rem;
+}
+
+#nav-modal-btn-dismiss {
+  font-size: 2rem;
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  cursor: pointer;
+}
+
 /* Context Styles */
 .main-title {
   font-family: var(--special-font);
@@ -154,17 +225,20 @@ main {
   overflow: hidden;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #carousel-img {
-  width: 100%;
+  min-width: 100%;
   height: auto;
 }
 
 .carousel-desc {
   padding: 40px 40px 0;
   background-color: var(--dark-colour);
-  height: 130px;
+  height: 200px;
 }
 
 #carousel-desc-title {
@@ -208,13 +282,12 @@ main {
 .ticket-info {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   padding: 60px 0;
 }
 
 .ticket-card {
-  width: 250px;
-  height: 920px;
+  width: 32%;
   background-color: #274653;
   padding: 20px 30px;
   border-radius: 5px;
@@ -339,8 +412,8 @@ main {
   margin-bottom: 14px;
 }
 
-.footer-socials a {
-  margin-bottom: 18px;
+.footer-socials p {
+  margin: 10px 0;
 }
 
 .footer-bottom {
@@ -355,7 +428,7 @@ main {
 .cta-banner {
   width: 100vw;
   background-color: var(--dark-colour);
-  padding: 50px 0 70px;
+  padding: 70px 0;
   text-align: center;
 }
 
@@ -397,7 +470,7 @@ main {
 }
 
 .cta-bar-container .btn-cta {
-  width: 100px;
+  width: 120px;
   padding: 6px 18px;
 }
 
