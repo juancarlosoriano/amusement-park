@@ -1,3 +1,8 @@
+/* Authors:
+Juan Carlo Soriano
+Batin Orene
+*/
+
 /* CSS Variables */
 :root {
   /* Colours */
@@ -15,6 +20,14 @@
   /* Fonts */
   --special-font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* CSS Reset Styles */
@@ -88,7 +101,7 @@ main {
   top: 0;
   width: 100vw;
   background-color: var(--main-accent);
-  height: 80px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,6 +148,64 @@ main {
   font-size: 18px;
 }
 
+.navbar-hamburger-btn {
+  border-radius: 3px;
+  background-color: var(--main-colour);
+  width: 50px;
+  height: 46px;
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-hamburger-btn img {
+  width: 30px;
+  height: 30px;
+  margin: 8px 10px;
+}
+
+.nav-modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  background-color: var(--dark-colour);
+  opacity: 95%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  visibility: hidden;
+}
+
+.nav-modal-list {
+  width: 50vw;
+  margin: 100px auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.nav-modal-list-item {
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.nav-modal-list-item .navbar-list-item-nav {
+  font-family: var(--special-font);
+  font-size: 1.2rem;
+}
+
+#nav-modal-btn-dismiss {
+  font-size: 2rem;
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  cursor: pointer;
+}
+
 /* Context Styles */
 .main-title {
   font-family: var(--special-font);
@@ -154,17 +225,20 @@ main {
   overflow: hidden;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #carousel-img {
-  width: 100%;
+  min-width: 100%;
   height: auto;
 }
 
 .carousel-desc {
   padding: 40px 40px 0;
   background-color: var(--dark-colour);
-  height: 130px;
+  height: 200px;
 }
 
 #carousel-desc-title {
@@ -208,13 +282,12 @@ main {
 .ticket-info {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   padding: 60px 0;
 }
 
 .ticket-card {
-  width: 250px;
-  height: 920px;
+  width: 32%;
   background-color: #274653;
   padding: 20px 30px;
   border-radius: 5px;
@@ -339,8 +412,8 @@ main {
   margin-bottom: 14px;
 }
 
-.footer-socials a {
-  margin-bottom: 18px;
+.footer-socials p {
+  margin: 10px 0;
 }
 
 .footer-bottom {
@@ -355,7 +428,7 @@ main {
 .cta-banner {
   width: 100vw;
   background-color: var(--dark-colour);
-  padding: 50px 0 70px;
+  padding: 70px 0;
   text-align: center;
 }
 
@@ -397,46 +470,99 @@ main {
 }
 
 .cta-bar-container .btn-cta {
-  width: 100px;
+  width: 120px;
   padding: 6px 18px;
 }
 
-/* FAQ Styles */
-.map-legend {
-  list-style-type: decimal;
-  margin-left: 40px;
-  color: var(--secondary-accent);
+/* Media Queries */
+@media only screen and (max-width: 990px) {
+  /* General sizing */
+  .container {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    max-width: 90vw;
+  }
+
+  h1 {
+    font-size: 1.1rem;
+  }
+
+  /* Navbar Styles */
+
+  /* Carousel Styles */
+  .carousel-slide {
+    height: fit-content;
+  }
+
+  #carousel-desc-text {
+    font-size: 0.9rem;
+  }
+
+  .carousel-desc {
+    padding: 6vw 6vw 0;
+    height: 40vw;
+    max-height: 140px;
+  }
+
+  /* Ticket Card Styles */
+  .ticket-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ticket-card {
+    height: fit-content;
+    width: 90vw;
+    margin-bottom: 20px;
+  }
+
+  /* Attraction Card Styles */
+  .attraction-card {
+    width: 90vw;
+    min-width: 90vw;
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+
+  /* CTA Banner/Bar Styles */
+  .cta-banner {
+    padding: 20px 0;
+  }
+
+  .cta-banner-text {
+    font-size: 1.6rem;
+  }
+
+  .cta-banner-btn {
+    font-size: 1.6rem;
+  }
+
+  .cta-bar-title {
+    font-size: 0.8rem;
+  }
+
+  .cta-bar-container .btn-cta {
+    padding: 6px 2vw;
+    font-size: 0.8rem;
+    width: 30vw;
+    max-width: 120px;
+    min-width: 100px;
+    margin-left: 15px;
+  }
+
+  /* Footer Styles */
+  .footer-container {
+    flex-direction: column;
+  }
 }
 
-ol li p {
-  color: var(--text-colour);
-  margin-right: 30px;
-}
+@media only screen and (max-width: 650px) {
+  /* Navbar Styles */
+  .navbar-list {
+    display: none;
+  }
 
-.Legend {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.faq-answer-text {
-  color: var(--text-colour);
-  font-size: 20px;
-  background-color: var(--main-accent);
-  border-radius: 10px;
-  padding: 20px;
-}
-.faq-question-text {
-  font-size: 30px;
-  font-family: var(--special-font);
-  color: var(--secondary-accent);
-}
-
-.about-us {
-  color: var(--text-colour);
-  text-align: justify;
-  font-size: 20px;
-  padding: 20px;
-  line-height: 30px;
-  margin-left: 2%;
-  margin-right: 2%;
+  .navbar-hamburger-btn {
+    display: block;
+  }
 }

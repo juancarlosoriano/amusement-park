@@ -11,9 +11,9 @@ Batin Orene
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Legend of Zelda Amusement Park</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./css/styles2.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body id="main-body">
     <!-- Navbar Component -->
     <nav class="navbar">
       <div class="container navbar-container">
@@ -38,7 +38,33 @@ Batin Orene
             >
           </li>
         </ul>
+        <div id="navbar-hamburger-btn" class="navbar-hamburger-btn">
+          <img src="images/hamburger.png" />
+        </div>
       </div>
+    </nav>
+
+    <!-- Nav Modal for Narrow Screens -->
+    <nav id="nav-modal" class="nav-modal">
+      <a id="nav-modal-btn-dismiss">×</a>
+      <ul class="nav-modal-list">
+        <li class="nav-modal-list-item">
+          <a class="navbar-list-item-nav" href="./index.html"> Home </a>
+        </li>
+        <li class="nav-modal-list-item">
+          <a class="navbar-list-item-nav" href="./pages/rides-attractions.html">
+            Attractions
+          </a>
+        </li>
+        <li class="nav-modal-list-item">
+          <a class="navbar-list-item-nav" href="./pages/about.html">About</a>
+        </li>
+        <li class="nav-modal-list-item">
+          <a class="navbar-list-item-cta btn-cta" href="./pages/shopping.html"
+            >Buy Now</a
+          >
+        </li>
+      </ul>
     </nav>
 
     <!-- Main Component -->
@@ -281,6 +307,7 @@ Batin Orene
             href="./pages/rides-attractions.html"
             >Rides and Attractions</a
           >
+          <br />
         </div>
       </div>
     </main>
@@ -303,9 +330,9 @@ Batin Orene
         </div>
         <div class="footer-section footer-socials">
           <h3>Follow Us</h3>
-          <a>Facebook</a>
-          <a>Instagram</a>
-          <a>Twitter</a>
+          <p>Facebook: Hyrule Adventure Park</p>
+          <p>Instagram: @hyrulepark</p>
+          <p>Twitter: @hyrulepark</p>
         </div>
       </div>
       <div class="footer-bottom">
@@ -323,5 +350,5 @@ Batin Orene
       </div>
     </div>
   </body>
-  <script src="./js/index.js"></script>
+  <script type="module" src="./js/index.js"></script>
 </html>

@@ -3,6 +3,9 @@ Authors:
 Juan Carlo Soriano 
 Batin Orene
 */
+
+import configureNavModal from "./nav-modal.js";
+
 const PASS_SELECTION = [
   {
     type: "Standard",
@@ -69,6 +72,9 @@ window.onload = () => {
 
   // Configure Modal
   configureModal();
+
+  // Configure Nav Modal
+  configureNavModal();
 };
 
 const populateShoppingCards = () => {
